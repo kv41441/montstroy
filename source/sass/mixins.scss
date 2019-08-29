@@ -1,0 +1,43 @@
+@mixin fontRalewayBlack ($font-size, $line-height, $color: #000000) {
+  font-family: "RalewayBlack", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin fontRalewayRegular ($font-size, $line-height, $color: #000000) {
+  font-family: "RalewayRegular", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin fontRobotoBold ($font-size, $line-height, $color: #000000) {
+  font-family: "RobotoBold", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin fontRobotoRegular ($font-size, $line-height, $color: #000000) {
+  font-family: "RobotoRegular", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin styleVisuallyHidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
