@@ -12,6 +12,13 @@
   color: $color;
 }
 
+@mixin fontRobotoBlack ($font-size, $line-height, $color: #000000) {
+  font-family: "RobotoBlack", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
 @mixin fontRobotoBold ($font-size, $line-height, $color: #000000) {
   font-family: "RobotoBold", "Arial", sans-serif;
   font-size: $font-size;
@@ -21,6 +28,20 @@
 
 @mixin fontRobotoRegular ($font-size, $line-height, $color: #000000) {
   font-family: "RobotoRegular", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin fontCirceRegular ($font-size, $line-height, $color: #000000) {
+  font-family: "CirceRegular", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin fontProximaNovaBold ($font-size, $line-height, $color: #000000) {
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   color: $color;
