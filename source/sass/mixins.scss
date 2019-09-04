@@ -5,6 +5,13 @@
   color: $color;
 }
 
+@mixin fontRalewayBold ($font-size, $line-height, $color: #000000) {
+  font-family: "RalewayBold", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
 @mixin fontRalewayRegular ($font-size, $line-height, $color: #000000) {
   font-family: "RalewayRegular", "Arial", sans-serif;
   font-size: $font-size;
@@ -21,6 +28,13 @@
 
 @mixin fontRobotoBold ($font-size, $line-height, $color: #000000) {
   font-family: "RobotoBold", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin fontRobotoMedium ($font-size, $line-height, $color: #000000) {
+  font-family: "RobotoMedium", "Arial", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   color: $color;

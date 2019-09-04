@@ -1,6 +1,647 @@
-.page-main {
+.projects {
   box-sizing: border-box;
 
-  margin: 0;
+  margin: 55px 0 0 0;
   padding: 0;
+
+  h2 {
+    margin: 0;
+    padding: 0 0 0 17px;
+    width: 300px;
+
+    @include fontRalewayBlack(30px, 50px);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+
+    background-color: #ffffff;
+  }
+}
+
+.projects__wrapper {
+  box-sizing: border-box;
+
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0;
+
+  max-width: 1190px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    top: 24px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #000000;
+  }
+}
+
+.projects__list {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 35px 0 0 14px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.projects__item {
+  box-sizing: border-box;
+
+  position: relative;
+
+  margin: 0 0 4px 0;
+  padding: 0;
+
+  width: 290px;
+
+  background-color: #5e5d60;
+
+  &:not(:first-of-type),
+  &:not(:nth-of-type(4)) {
+    margin-left: 4px;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+
+    @include fontRobotoBlack(24px, 50px, #ffffff);
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    @include fontRobotoRegular(15px, 22px, #ffffff);
+
+    opacity: 0.66;
+  }
+
+  a {
+    box-sizing: border-box;
+
+    position: absolute;
+    bottom: 11px;
+    right: 11px;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    width: 46px;
+    height: 34px;
+
+    border: 2px solid #ffffff;
+
+    opacity: 0.34;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 12px;
+      right: 13px;
+
+      width: 0;
+      height: 0;
+
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+
+      border-left: 4px solid #ffffff;
+
+      opacity: 0.34px;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 14px;
+      right: 14px;
+
+      width: 16px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+
+    &:hover {
+      background-color: #00ffd8;
+
+      border-color: #00ffd8;
+
+      opacity: 1;
+
+      &::before {
+        border-left-color: #575757;
+      }
+
+      &::after {
+        background-color: #575757;
+      }
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &--stadium {
+    padding-bottom: 34px;
+
+    h3 {
+      margin-top: 40px;
+      margin-left: 30px;
+    }
+
+    p {
+      margin-top: 34px;
+      margin-left: 30px;
+
+      width: 220px;
+    }
+
+    background: url("../img/stadium-desktop@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/stadium-desktop@2x.jpg") no-repeat 0 0;
+    }
+  }
+
+  &--business {
+    h3 {
+      margin-top: 52px;
+      margin-left: 28px;
+
+      width: 170px;
+
+      line-height: 24px;
+    }
+
+    p {
+      margin-top: 24px;
+      margin-left: 28px;
+
+      width: 250px;
+
+      letter-spacing: 0.1px;
+    }
+
+    background: url("../img/business-center-desktop@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/business-center-desktop@2x.jpg") no-repeat 0 0;
+    }
+  }
+
+  &--cinema {
+    h3 {
+      margin-top: 53px;
+      margin-left: 28px;
+
+      width: 170px;
+
+      line-height: 24px;
+    }
+
+    p {
+      margin-top: 23px;
+      margin-left: 28px;
+
+      width: 220px;
+
+      letter-spacing: 0.1px;
+    }
+
+    background: url("../img/cinema-desktop@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/cinema-desktop@2x.jpg") no-repeat 0 0;
+    }
+  }
+
+  &--medial {
+    h3 {
+      margin-top: 53px;
+      margin-left: 28px;
+
+      width: 170px;
+
+      line-height: 24px;
+    }
+
+    p {
+      margin-top: 47px;
+      margin-left: 28px;
+
+      width: 245px;
+    }
+
+    background: url("../img/tk-medial-desktop@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/tk-medial-desktop@2x.jpg") no-repeat 0 0;
+    }
+  }
+
+  &--energo {
+    background: url("../img/energocompany-desktop@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/energocompany-desktop@2x.jpg") no-repeat 0 0;
+    }
+  }
+
+  &--theater {
+    background: url("../img/theater-desktop@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/theater-desktop@2x.jpg") no-repeat 0 0;
+    }
+
+    br {
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+
+  &--big {
+    width: 584px;
+
+    h3 {
+      margin-top: 40px;
+      margin-left: 30px;
+
+      @include fontRobotoBold(32px, 42px, #ffffff);
+    }
+
+    p {
+      margin-top: 32px;
+      margin-left: 30px;
+      padding-bottom: 66px;
+
+      width: 475px;
+
+      opacity: 0.6;
+
+      letter-spacing: 0.1px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .projects {
+    margin-top: 65px;
+
+    h2 {
+      padding-left: 0;
+
+      font-size: 26px;
+      letter-spacing: 1.04px;
+    }
+  }
+
+  .projects__wrapper {
+    &::before {
+      display: none;
+    }
+
+    width: 724px;
+  }
+
+  .projects__list {
+    flex-direction: column;
+
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .projects__item {
+    margin-left: 0;
+    margin-bottom: 10px;
+
+    &:not(:first-of-type),
+    &:not(:nth-of-type(4)) {
+      margin-left: 0;
+    }
+
+    width: 100%;
+
+    h3 {
+      margin: 33px 0 0 42px;
+      padding: 0;
+
+      font-size: 24px;
+    }
+
+    p {
+      margin: 18px 0 0 42px;
+      padding: 0;
+
+      font-size: 18px;
+    }
+
+    a {
+      display: none;
+    }
+
+    &--stadium {
+      p {
+        margin-top: 0;
+
+        width: 550px;
+      }
+
+      background: url("../img/stadium-tablet@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/stadium-tablet@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--business {
+      padding-bottom: 52px;
+
+      h3 {
+        margin-top: 40px;
+
+        width: 270px;
+      }
+
+      p {
+        width: 580px;
+
+        letter-spacing: 0;
+      }
+
+      background: url("../img/business-center-tablet@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/business-center-tablet@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--cinema {
+      padding-bottom: 56px;
+
+      h3 {
+        margin-top: 36px;
+
+        width: 300px;
+
+        letter-spacing: 0;
+      }
+
+      p {
+        width: 500px;
+
+        letter-spacing: 0;
+      }
+
+      background: url("../img/cinema-tablet@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/cinema-tablet@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--medial {
+      padding-bottom: 38px;
+
+      h3 {
+        margin-top: 34px;
+
+        letter-spacing: 0;
+      }
+
+      p {
+        width: 480px;
+      }
+
+      background: url("../img/tk-medial-tablet@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/tk-medial-tablet@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--energo {
+      padding-bottom: 53px;
+
+      h3 {
+        margin-top: 36px;
+
+        letter-spacing: 0.4px;
+      }
+
+      p {
+        margin-top: 5px;
+
+        width: 500px;
+
+        letter-spacing: 0;
+      }
+
+      span {
+        display: none;
+      }
+
+      background: url("../img/energocompany-tablet@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/energocompany-tablet@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--theater {
+      padding-bottom: 32px;
+
+      h3 {
+        margin-top: 34px;
+
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        margin-top: 5px;
+
+        width: 620px;
+
+        letter-spacing: 0;
+      }
+
+      br {
+        &:first-of-type {
+          display: none;
+        }
+
+        &:last-of-type {
+          display: block;
+        }
+      }
+
+      background: url("../img/theater-tablet@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/theater-tablet@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .projects {
+    margin-top: 42px;
+
+    h2 {
+      font-size: 20px;
+      line-height: auto;
+
+      letter-spacing: 0.8px;
+    }
+  }
+
+  .projects__wrapper {
+    width: 280px;
+  }
+
+  .projects__list {
+    margin-top: 3px;
+  }
+
+  .projects__item {
+    h3 {
+      margin-top: 24px;
+      margin-left: 3px;
+
+      width: 100%;
+
+      @include fontRalewayBold(16px, auto, #ffffff);
+      font-weight: 700;
+      text-align: center;
+
+      letter-spacing: 0.1px;
+    }
+
+    p {
+      @include styleVisuallyHidden;
+    }
+
+    &--stadium {
+      padding-bottom: 26px;
+
+      background: url("../img/stadium-mobile@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/stadium-mobile@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--business {
+      padding-bottom: 39px;
+
+      h3 {
+        margin-top: 37px;
+      }
+
+      background: url("../img/business-center-mobile@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/business-center-mobile@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--cinema {
+      padding-bottom: 39px;
+
+      h3 {
+        margin-top: 37px;
+      }
+
+      background: url("../img/cinema-mobile@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/cinema-mobile@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--medial {
+      padding-bottom: 37px;
+
+      h3 {
+        margin-top: 39px;
+      }
+
+      background: url("../img/tk-medial-mobile@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/tk-medial-mobile@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--energo {
+      padding-bottom: 30px;
+
+      h3 {
+        margin-top: 28px;
+      }
+
+      background: url("../img/energocompany-mobile@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/energocompany-mobile@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+
+    &--theater {
+      padding-bottom: 30px;
+
+      h3 {
+        margin-top: 28px;
+      }
+
+      background: url("../img/theater-mobile@1x.jpg") no-repeat 0 0;
+      background-size: contain;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/theater-mobile@2x.jpg") no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+  }
 }

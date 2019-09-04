@@ -1,6 +1,21 @@
-.page-header {
+.logo {
   box-sizing: border-box;
 
-  margin: 0;
   padding: 0;
+
+  width: 150px;
+
+  img {
+    width: 141px;
+    height: 60px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .logo {
+    img {
+      width: 86px;
+      height: 37px;
+    }
+  }
 }

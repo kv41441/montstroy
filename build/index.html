@@ -16,95 +16,142 @@
 </head>
 <body>
 
-  <!--<svg style="display: none;">
-    <symbol id="" viewBox="0 0 16 6">
-      <g>
-
-      </g>
-    </symbol>
-  </svg>-->
-
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <div class="page-header__logo logo">
-        <picture>
-          <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой">
-        </picture>
+    <div class="page-header__decor-wrapper">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo logo">
+          <picture>
+            <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой">
+          </picture>
+        </div>
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a href="#introduce">
+                Главная
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#services">
+                Услуги
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#projects">
+                Проекты
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#partners">
+                Партнеры
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="main-nav__wrapper">
+            <a class="main-nav__tel" href="tel:+74954526723">
+              +7 (495) 452-67-23
+            </a>
+            <a class="main-nav__feedback-button button" href="#footer">
+              Обратная связь
+            </a>
+          </div>
+        </nav>
       </div>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item">
-            <a href="#introduce">
-              Главная
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#services">
-              Услуги
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#projects">
-              Проекты
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#partners">
-              Партнеры
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#contacts">
-              Контакты
-            </a>
-          </li>
-        </ul>
-        <a class="main-nav__tel" href="tel:+74954526723">
-          +7 (495) 452-67-23
-        </a>
-        <a class="main-nav__feedback-button button" href="#footer">
-          Обратная связь
-        </a>
-      </nav>
     </div>
+    <ul class="page-header__hidden-nav hidden-nav">
+      <li class="hidden-nav__item">
+        <a href="#services">
+          Услуги
+        </a>
+      </li>
+      <li class="hidden-nav__item">
+        <a href="#projects">
+          Проекты
+        </a>
+      </li>
+      <li class="hidden-nav__item">
+        <a href="#partners">
+          Партнеры
+        </a>
+      </li>
+      <li class="hidden-nav__item">
+        <a href="#contacts">
+          Контакты
+        </a>
+      </li>
+    </ul>
   </header>
 
   <main class="page-main">
     <section class="introduce" id="introduce">
-      <div class="introduce-wrapper">
+      <div class="introduce__wrapper">
         <div class="introduce__text-wrapper">
           <h1>Строительно-монтажные работы</h1>
-          <p>Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке
-            с 1992 года, и за это время зарекомендовала себя как ведущий разработчик
+          <p>
+            Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке
+            <br> с <span>1992</span> года, и за это время зарекомендовала себя как ведущий разработчик
             качественных систем установок для предприятий, выполняет полный комплекс
-            строительно-монтажных и пуско-наладочных работ по электроснабжению зданий
-            и сооружений.</p>
+            строительно-монтажных <br> и пуско-наладочных работ <br> по электроснабжению зданий
+            и сооружений.
+          </p>
+          <p>
+            Работаем на российском рынке с <span>1992</span> года
+          </p>
           <div class="introduce__buttons-wrapper">
-            <a class="introduce__services-button button" href="#services">
+            <a class="introduce__services-button button button--services" href="#services">
               Наши услуги
             </a>
-            <a class="introduce__services-button button" href="#footer">
+            <a class="introduce__services-button button button--contacts" href="#footer">
               Связаться с нами
             </a>
           </div>
+          <p>
+            Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке
+            с 1992года, и за это время зарекомендовала себя как ведущий разработчик
+            качественных систем установок для предприятий, выполняет полный комплекс
+            строительно-монтажных и пуско-наладочных работ по электроснабжению зданий
+            <br> и сооружений.
+          </p>
         </div>
         <div class="introduce__advantages advantages">
-          <ul class="advantages-list">
-            <li class="advantages-item">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--quality">
               <p>
                 Гарантированное высокое качество продукции
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages__item advantages__item--deadlines advantages__item--active">
               <p>
                 Исполнение всех сроков и обязательств
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages__item advantages__item--production">
               <p>
                 Собственная производственная база
               </p>
             </li>
+          </ul>
+          <ul class="advantages__buttons-container">
+            <button class="advantages__button" type="button" name="advantages__quality-button">
+              <span class="visually-hidden">
+                Слайд "Качество продукции"
+              </span>
+            </button>
+            <button class="advantages__button advantages__button--active" type="button" name="advantages__deadlines-button">
+              <span class="visually-hidden">
+                Слайд "Исполнение сроков"
+              </span>
+            </button>
+            <button class="advantages__button" type="button" name="advantages__production-button">
+              <span class="visually-hidden">
+                Слайд "Производственная база"
+              </span>
+            </button>
           </ul>
         </div>
       </div>
@@ -114,155 +161,244 @@
       <div class="services__wrapper">
         <h2>Услуги</h2>
         <ul class="services__list">
-          <li class="services__item">
+          <li class="services__item services__item--designing services__item--opened">
             <h3>Проектирование</h3>
-            <a href="#">
-              Предварительная разработка концепции;
-            </a>
-            <a href="#">
-              Установка систем энергоснабжения;
-            </a>
-            <a href="#">
-              Оформление задания на проектирование;
-            </a>
-            <a href="#">
-              Разработка всей рабочей и проектной документации;
-            </a>
-            <a href="#">
-              Окончательное согласование проекта энергоснабжения в органах
-              гос.надзора;
-            </a>
-            <a href="#">
-              Обеспечение авторского надзора на протяжении всего строительства
-              (контроль за соблюдением всех норм и проектных разработок).
-            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  Предварительная разработка концепции<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Установка систем энергоснабжения<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Оформление задания на проектирование<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Разработка всей рабочей и проектной документации<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Окончательное согласование проекта энергоснабжения в органах
+                  <span>гос.надзора;</span>
+                  <span class="services__item-span">гос. надзоров</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Обеспечение авторского надзора <br> на протяжении всего строительства
+                  <span>(контроль за соблюдением всех норм и проектных разработок).</span>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--engineering">
             <h3>Инженерные изыскания</h3>
-            <a href="#">
-              Инженерно-геодезические изыскания;
-            </a>
-            <a href="#">
-              Инженерно-геофизические изыскания;
-            </a>
-            <a href="#">
-              Инженерно-топографические изыскания;
-            </a>
-            <a href="#">
-              Инженерно-геологические изыскания;
-            </a>
-            <a href="#">
-              Изыскания грунтовых строительных материалов (проведение опытных
-              полевых работ и обследование земляных сооружений);
-            </a>
-            <a href="#">
-              Инженерно-экологические (полевые работы, а также лабораторные
-              и камеральные работы);
-            </a>
-            <a href="#">
-              Археологические;
-            </a>
-            <a href="#">
-              Кадастровые и землеустроительные.
-            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  Инженерно-геодезические изыскания<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Инженерно-геофизические изыскания<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Инженерно-топографические изыскания<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Инженерно-геологические изыскания<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Изыскания грунтовых строительных материалов <span>(проведение опытных
+                  полевых работ и обследование земляных сооружений);</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Инженерно-экологические <span>(полевые работы, а также лабораторные
+                  и камеральные работы);</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Археологические<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Кадастровые и землеустроительные<span>.</span>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--montage">
             <h3>Строительно-монтажные работы</h3>
-            <a href="#">
-              Строительство и реконструкция подстанций до 500 кВ и распределительных
-              устройств станций до 500 кВ;
-            </a>
-            <a href="#">
-              Строительство распределительных пунктов;
-            </a>
-            <a href="#">
-              Внедрение систем автоматизации управления оборудованием подстанций до
-              500 кВ;
-            </a>
-            <a href="#">
-              Вынос действующих кабелей из строительной зоны;
-            </a>
-            <a href="#">
-              Обеспечение временного электроснабжения;
-            </a>
-            <a href="#">
-              Монтаж электрооборудования.
-            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  Строительство и реконструкция подстанций до 500 кВ и распределительных
+                  устройств станций до 500 кВ<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Строительство распределительных пунктов<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Внедрение систем автоматизации управления оборудованием подстанций до
+                  500 кВ<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Вынос действующих кабелей из строительной зоны<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Обеспечение временного электроснабжения<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Монтаж электрооборудования<span>.</span>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--using">
             <h3>Эксплуатация и сервисное обслуживание</h3>
-            <a href="#">
-              Эксплуатация электрики зданий и энергоустановок, снабжающих энергией
-              эксплуатируемые сооружения;
-            </a>
-            <a href="#">
-              Эксплуатация систем отопления объектов с проведением плановых сезонных
-              мероприятий;
-            </a>
-            <a href="#">
-              Эксплуатация систем ХВС и ГВС эксплуатируемого здания;
-            </a>
-            <a href="#">
-              Сервисное обслуживание и эксплуатация систем водоснабжения, водоподготовки
-              и фильтрации в обслуживаемом здании;
-            </a>
-            <a href="#">
-              Обслуживание системы дренажа, канализации и ливнестоков: прочистка, промывка,
-              вывоз отходов за территорию;
-            </a>
-            <a href="#">
-              Сезонная перенастройка автоматических элементов систем эксплуатации здания
-              и другое.
-            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  Эксплуатация электрики зданий и энергоустановок, снабжающих энергией
+                  эксплуатируемые сооружения<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Эксплуатация систем отопления объектов с проведением плановых сезонных
+                  мероприятий<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Эксплуатация систем ХВС и ГВС эксплуатируемого здания<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Сервисное обслуживание и эксплуатация систем водоснабжения, водоподготовки
+                  и фильтрации в обслуживаемом здании<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Обслуживание системы дренажа, канализации и ливнестоков: прочистка, промывка,
+                  вывоз отходов за территорию<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Сезонная перенастройка автоматических элементов систем эксплуатации здания
+                  и другое<span>.</span>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--lab">
             <h3>Электролаборатория</h3>
-            <a href="#">
-              Проверка состояния различных элементов устройств заземления;
-            </a>
-            <a href="#">
-              Проверка наличия цепи, проведение замеров сопротивлений (переходных) между
-              заземляющими проводниками и заземлителями, проверку металлосвязи;
-            </a>
-            <a href="#">
-              Проверка систем молниезащиты;
-            </a>
-            <a href="#">
-              Измерение сопротивления изоляции электрических кабелей, аппаратов,
-              электропроводок и электрооборудования;
-            </a>
-            <a href="#">
-              Измерение сопротивления заземления и заземляющих устройств;
-            </a>
-            <a href="#">
-              Поиск кабельных трасс, мест повреждения и «прожиг кабеля»;
-            </a>
-            <a href="#">
-              Проведение всех необходимых испытаний и измерений для кабельных линий,
-              включая кабель с изоляцией из сшитого полиэтилена до 220 кВ.
-            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  Проверка состояния различных элементов устройств заземления<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Проверка наличия цепи, проведение замеров сопротивлений (переходных) между
+                  заземляющими проводниками и заземлителями, проверку металлосвязи<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Проверка систем молниезащиты<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Измерение сопротивления изоляции электрических кабелей, аппаратов,
+                  электропроводок и электрооборудования<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Измерение сопротивления заземления и заземляющих устройств<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Поиск кабельных трасс, мест повреждения и «прожиг кабеля»<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Проведение всех необходимых испытаний и измерений для кабельных линий,
+                  включая кабель с изоляцией из сшитого полиэтилена до 220 кВ<span>.</span>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="services__item">
+          <li class="services__item services__item--connecting">
             <h3>Услуги по технологическому присоединению</h3>
-            <a href="#">
-              Оказание технико-экономического консалтинга в составлении договора на
-              технологическое присоединение мощности потребителя к сетям электросетевых
-              компаний;
-            </a>
-            <a href="#">
-              Обследование присоединяемых устройств ответственным лицом по государственному
-              надзору при участии сетевого оператора и собственника устройства;
-            </a>
-            <a href="#">
-              Фактическое присоединение объектов заявителя к сетям оператора;
-            </a>
-            <a href="#">
-              Составление и согласование необходимой технической документации для ввода в
-              эксплуатацию объекта;
-            </a>
-            <a href="#">
-              Ввод присоединенного объекта в эксплуатацию.
-            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  Оказание технико-экономического консалтинга в составлении договора на
+                  технологическое присоединение мощности потребителя к сетям электросетевых
+                  компаний<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Обследование присоединяемых устройств ответственным лицом по государственному
+                  надзору при участии сетевого оператора и собственника устройства<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Фактическое присоединение объектов заявителя к сетям оператора<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Составление и согласование необходимой технической документации для ввода в
+                  эксплуатацию объекта<span>;</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Ввод присоединенного объекта в эксплуатацию<span>.</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -272,7 +408,7 @@
       <div class="projects__wrapper">
         <h2>Проекты</h2>
         <ul class="projects__list">
-          <li class="projects__item">
+          <li class="projects__item projects__item--stadium">
             <h3>Стадион «Футур»</h3>
             <p>
               В целях обеспечения электроэнергией стадиона специалистами было
@@ -284,7 +420,7 @@
               </span>
             </a>
           </li>
-          <li class="projects__item">
+          <li class="projects__item projects__item--business">
             <h3>Бизнес-центр «Ореол»</h3>
             <p>
               Специалисты провели масштабную работу по организации АСКУЭ на
@@ -296,7 +432,7 @@
               </span>
             </a>
           </li>
-          <li class="projects__item">
+          <li class="projects__item projects__item--cinema">
             <h3>Кинотеатр «Семейный»</h3>
             <p>
               Специалисты выполнили комплекс работ по системам учета электроэнергии
@@ -307,7 +443,7 @@
               </span>
             </a>
           </li>
-          <li class="projects__item">
+          <li class="projects__item projects__item--medial">
             <h3>ТК «Medial»</h3>
             <p>
               В целях обеспечения электроэнергией телевизионного комплекса было
@@ -319,12 +455,12 @@
               </span>
             </a>
           </li>
-          <li class="projects__item projects__item--big">
+          <li class="projects__item projects__item--energo projects__item--big">
             <h3>ОАО «ЭнергоНацКомпани»</h3>
             <p>
-              Компанией были выполнены строительно-монтажные и пусконаладочные работы,
-              а также поставлены материалы и оборудование при осуществлении ремонта
-              электросетевого имущества кабельных линий 220 кВ для ОАО «ЭнергоНацКомпани»
+              Компанией были выполнены строительно-монтажные и пусконаладочные работы<span>,
+              а также поставлены материалы <br> и оборудование при осуществлении ремонта
+              электросетевого имущества кабельных линий 220 кВ </span> для ОАО «ЭнергоНацКомпани»
             </p>
             <a href="#">
               <span class="visually-hidden">
@@ -332,10 +468,10 @@
               </span>
             </a>
           </li>
-          <li class="projects__item projects__item--big">
+          <li class="projects__item projects__item--theater projects__item--big">
             <h3>Театр «Буратино»</h3>
             <p>
-              Специалистами были проведены комплексные электро-монтажные и
+              Специалистами были проведены комплексные <br> электро-монтажные <br> и
               пуско-наладочные работы по механизации сценических подъемников в здании
               театра
             </p>
@@ -350,43 +486,45 @@
     </section>
 
     <section class="partners" id="partners">
-      <h2 class="visually-hidden">Наши партнеры</h2>
       <div class="partners__wrapper">
-        <div class="partners__buttons-wrapper">
-          <button type="button" name="partners__scroll-to-left-button" aria-label="Скроллить список партнеров влево">
-            <span class="visually-hidden">
-              Скроллить список партнеров влево
-            </span>
-          </button>
-          <button type="button" name="partners__scroll-to-right-button" aria-label="Скроллить список партнеров вправо">
-            <span class="visually-hidden">
-              Скроллить список партнеров вправо
-            </span>
-          </button>
+        <div class="partners__inner-wrapper">
+          <h2><span>Наши</span> Партнеры</h2>
+          <div class="partners__buttons-wrapper">
+            <button type="button" name="partners__scroll-to-left-button" aria-label="Скроллить список партнеров влево">
+              <span class="visually-hidden">
+                Скроллить список партнеров влево
+              </span>
+            </button>
+            <button type="button" name="partners__scroll-to-right-button" aria-label="Скроллить список партнеров вправо">
+              <span class="visually-hidden">
+                Скроллить список партнеров вправо
+              </span>
+            </button>
+          </div>
         </div>
         <ul class="partners__list">
-          <li class="partners__item">
+          <li class="partners__item partners__item--ava">
             <picture>
               <source media="(max-width: 767px)" srcset="img/ava-company-mobile@1x.jpg 1x, img/ava-company-mobile@2x.jpg 2x">
               <source media="(max-width: 1023px)" srcset="img/ava-company-tablet@1x.jpg 1x, img/ava-company-tablet@2x.jpg 2x">
               <img src="img/ava-company-desktop@1x.jpg" srcset="img/ava-company-desktop@2x.jpg 2x" alt="Ava-company">
             </picture>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--mirror partners__item--active">
             <picture>
               <!--<source media="(max-width: 767px)" srcset="img/mirror-mobile@1x.jpg 1x, img/mirror-mobile@2x.jpg 2x">-->
               <source media="(max-width: 1023px)" srcset="img/mirror-tablet@1x.jpg 1x, img/mirror-tablet@2x.jpg 2x">
               <img src="img/mirror-desktop@1x.jpg" srcset="img/mirror-desktop@2x.jpg 2x" alt="Mirror (business center)">
             </picture>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--shield">
             <picture>
               <!--<source media="(max-width: 767px)" srcset="img/shield-mobile@1x.jpg 1x, img/shield-mobile@2x.jpg 2x">-->
               <source media="(max-width: 1023px)" srcset="img/shield-tablet@1x.jpg 1x, img/shield-tablet@2x.jpg 2x">
               <img src="img/shield-desktop@1x.jpg" srcset="img/shield-desktop@2x.jpg 2x" alt="Shield (Охранное предприятие)">
             </picture>
           </li>
-          <li class="partners__item">
+          <li class="partners__item partners__item--teplo">
             <picture>
               <!--<source media="(max-width: 767px)" srcset="img/teplodomenerg-mobile@1x.jpg 1x, img/teplodomenerg-mobile@2x.jpg 2x">-->
               <!--<source media="(max-width: 1023px)" srcset="img/teplodomenerg-tablet@1x.jpg 1x, img/teplodomenerg-tablet@2x.jpg 2x">-->
@@ -394,13 +532,35 @@
             </picture>
           </li>
         </ul>
+        <ul class="partners__slider-buttons-container">
+          <button class="partners__slider-button" type="button" name="partners__teplo-button">
+            <span class="visually-hidden">
+              Слайд "ЗАО НТФ ТЕПЛОДОМЭНЕРГ"
+            </span>
+          </button>
+          <button class="partners__slider-button" type="button" name="partners__ava-button">
+            <span class="visually-hidden">
+              Слайд "Ava-company"
+            </span>
+          </button>
+          <button class="partners__slider-button partners__slider-button--active" type="button" name="partners__mirror-button">
+            <span class="visually-hidden">
+              Слайд "Business-center Mirror"
+            </span>
+          </button>
+          <button class="partners__slider-button" type="button" name="partners__shield-button">
+            <span class="visually-hidden">
+              Слайд "Охранное предприятие Shield"
+            </span>
+          </button>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <section class="map">
-      <h2 class="visually-hidden">Наше месторасположение на карте</h2>
+      <h2>Контакты</h2>
       <picture>
         <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
         <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
