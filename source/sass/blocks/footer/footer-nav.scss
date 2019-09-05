@@ -32,3 +32,32 @@
     opacity: 0.5;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .footer-nav__list {
+    flex-direction: column;
+
+    min-width: 320px;
+    width: 100%;
+
+    background-color: #1a1a1a;
+  }
+
+  .footer-nav__item {
+    width: 100%;
+
+    a {
+      display: block;
+
+      margin-left: 20px;
+      padding: 13px 0 10.5px 0;
+
+      font-size: 14px;
+      line-height: 25px;
+
+      opacity: 0.6;
+    }
+
+    border-bottom: 1px solid #505050;
+  }
+}

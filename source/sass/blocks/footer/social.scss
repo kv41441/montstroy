@@ -80,3 +80,42 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .social {
+    padding: 16px 0 43px 20px;
+
+    width: 100%;
+  }
+
+  .social__item {
+    &:not(:nth-of-type(3n)) {
+      margin-right: 32px;
+    }
+
+    &--vk {
+      img {
+        margin-top: 5px;
+
+        width: 40px;
+        height: 24px;
+      }
+    }
+
+    &--twitter {
+      img {
+        margin-top: 4px;
+
+        width: 31px;
+        height: 26px;
+      }
+    }
+
+    &--fb {
+      img {
+        width: 15px;
+        height: 29px;
+      }
+    }
+  }
+}
