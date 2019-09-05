@@ -54,13 +54,6 @@
   color: $color;
 }
 
-@mixin fontProximaNovaBold ($font-size, $line-height, $color: #000000) {
-  font-family: "ProximaNovaBold", "Arial", sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
-  color: $color;
-}
-
 @mixin styleVisuallyHidden {
   position: absolute;
 

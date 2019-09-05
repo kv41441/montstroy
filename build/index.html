@@ -20,9 +20,11 @@
     <div class="page-header__decor-wrapper">
       <div class="page-header__wrapper">
         <div class="page-header__logo logo">
-          <picture>
-            <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой">
-          </picture>
+          <a>
+            <picture>
+              <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой">
+            </picture>
+          </a>
         </div>
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list nav-list">
@@ -504,32 +506,40 @@
         </div>
         <ul class="partners__list">
           <li class="partners__item partners__item--ava">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/ava-company-mobile@1x.jpg 1x, img/ava-company-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/ava-company-tablet@1x.jpg 1x, img/ava-company-tablet@2x.jpg 2x">
-              <img src="img/ava-company-desktop@1x.jpg" srcset="img/ava-company-desktop@2x.jpg 2x" alt="Ava-company">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/ava-company-mobile@1x.jpg 1x, img/ava-company-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/ava-company-tablet@1x.jpg 1x, img/ava-company-tablet@2x.jpg 2x">
+                <img src="img/ava-company-desktop@1x.jpg" srcset="img/ava-company-desktop@2x.jpg 2x" alt="Ava-company">
+              </picture>
+            </a>
           </li>
           <li class="partners__item partners__item--mirror partners__item--active">
-            <picture>
-              <!--<source media="(max-width: 767px)" srcset="img/mirror-mobile@1x.jpg 1x, img/mirror-mobile@2x.jpg 2x">-->
-              <source media="(max-width: 1023px)" srcset="img/mirror-tablet@1x.jpg 1x, img/mirror-tablet@2x.jpg 2x">
-              <img src="img/mirror-desktop@1x.jpg" srcset="img/mirror-desktop@2x.jpg 2x" alt="Mirror (business center)">
-            </picture>
+            <a href="#">
+              <picture>
+                <!--<source media="(max-width: 767px)" srcset="img/mirror-mobile@1x.jpg 1x, img/mirror-mobile@2x.jpg 2x">-->
+                <source media="(max-width: 1023px)" srcset="img/mirror-tablet@1x.jpg 1x, img/mirror-tablet@2x.jpg 2x">
+                <img src="img/mirror-desktop@1x.jpg" srcset="img/mirror-desktop@2x.jpg 2x" alt="Mirror (business center)">
+              </picture>
+            </a>
           </li>
           <li class="partners__item partners__item--shield">
-            <picture>
-              <!--<source media="(max-width: 767px)" srcset="img/shield-mobile@1x.jpg 1x, img/shield-mobile@2x.jpg 2x">-->
-              <source media="(max-width: 1023px)" srcset="img/shield-tablet@1x.jpg 1x, img/shield-tablet@2x.jpg 2x">
-              <img src="img/shield-desktop@1x.jpg" srcset="img/shield-desktop@2x.jpg 2x" alt="Shield (Охранное предприятие)">
-            </picture>
+            <a href="#">
+              <picture>
+                <!--<source media="(max-width: 767px)" srcset="img/shield-mobile@1x.jpg 1x, img/shield-mobile@2x.jpg 2x">-->
+                <source media="(max-width: 1023px)" srcset="img/shield-tablet@1x.jpg 1x, img/shield-tablet@2x.jpg 2x">
+                <img src="img/shield-desktop@1x.jpg" srcset="img/shield-desktop@2x.jpg 2x" alt="Shield (Охранное предприятие)">
+              </picture>
+            </a>
           </li>
           <li class="partners__item partners__item--teplo">
-            <picture>
-              <!--<source media="(max-width: 767px)" srcset="img/teplodomenerg-mobile@1x.jpg 1x, img/teplodomenerg-mobile@2x.jpg 2x">-->
-              <!--<source media="(max-width: 1023px)" srcset="img/teplodomenerg-tablet@1x.jpg 1x, img/teplodomenerg-tablet@2x.jpg 2x">-->
-              <img src="img/teplodomenerg-desktop@1x.jpg" srcset="img/teplodomenerg-desktop@2x.jpg 2x" alt="ЗАО НТФ Теплодомэнерг">
-            </picture>
+            <a href="#">
+              <picture>
+                <!--<source media="(max-width: 767px)" srcset="img/teplodomenerg-mobile@1x.jpg 1x, img/teplodomenerg-mobile@2x.jpg 2x">-->
+                <!--<source media="(max-width: 1023px)" srcset="img/teplodomenerg-tablet@1x.jpg 1x, img/teplodomenerg-tablet@2x.jpg 2x">-->
+                <img src="img/teplodomenerg-desktop@1x.jpg" srcset="img/teplodomenerg-desktop@2x.jpg 2x" alt="ЗАО НТФ Теплодомэнерг">
+              </picture>
+            </a>
           </li>
         </ul>
         <ul class="partners__slider-buttons-container">
@@ -561,6 +571,7 @@
   <footer class="page-footer">
     <section class="map">
       <h2>Контакты</h2>
+      <h3 class="visually-hidden">Наше месторасположение на карте</h3>
       <picture>
         <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
         <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
@@ -604,75 +615,83 @@
     </section>
 
     <div class="page-footer footer">
-      <div class="footer__logo logo">
-        <picture>
-          <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой">
-        </picture>
-        <p>ЗАО «НCП «МонтCтрой»</p>
-      </div>
-      <div class="footer__nav footer-nav">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a href="#services">
-              Услуги
+      <div class="footer__wrapper">
+        <div class="footer__inner-wrapper">
+          <div class="footer__logo logo logo--footer">
+            <a>
+              <picture>
+                <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Логотип МонтСтрой">
+              </picture>
             </a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#projects">
-              Проекты
-            </a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#partners">
-              Партнеры
-            </a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#contacts">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#">
-              <span class="visually-hidden">Мы во Вконтакте</span>
-              <img src="img/icon-vk.png" alt="Логотип Вконтакте">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#">
-              <span class="visually-hidden">Мы в Твиттере</span>
-              <img src="img/icon-twitter.png" alt="Логотип Твиттера">
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
-              <img src="img/icon-facebook.png" alt="Логотип Фейсбука">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__contacts contacts" id="contacts">
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»
-          </li>
-          <li class="contacts__item">
-            <a href="mailto:zao@montstroy.ru">
-              zao@montstroy.ru
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+74954526723">
-              +7 (495) 452-67-23
-            </a>
-            <p>Ежедневно с 9:00 до 18:00</p>
-          </li>
-        </ul>
+            <p>ЗАО «НCП «МонтCтрой»</p>
+          </div>
+          <div class="footer__nav footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#services">
+                  Услуги
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#projects">
+                  Проекты
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#partners">
+                  Партнеры
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item social__item--vk">
+                <a href="#">
+                  <span class="visually-hidden">Мы во Вконтакте</span>
+                  <img src="img/icon-vk.png" alt="Логотип Вконтакте">
+                </a>
+              </li>
+              <li class="social__item social__item--twitter">
+                <a href="#">
+                  <span class="visually-hidden">Мы в Твиттере</span>
+                  <img src="img/icon-twitter.png" alt="Логотип Твиттера">
+                </a>
+              </li>
+              <li class="social__item social__item--fb">
+                <a href="#">
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                  <img src="img/icon-facebook.png" alt="Логотип Фейсбука">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts contacts" id="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--address">
+              <p>
+                Варшавское шоссе, <br> д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»
+              </p>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <a href="mailto:zao@montstroy.ru">
+                zao@montstroy.ru
+              </a>
+            </li>
+            <li class="contacts__item contacts__item--tel">
+              <a href="tel:+74954526723">
+                +7 (495) 452-67-23
+              </a>
+              <p>Ежедневно с 9:00 до 18:00</p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="footer__copyright">
         <p>1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
