@@ -46,6 +46,23 @@
 
     background-color: transparent;
   }
+
+  &--form {
+    padding: 3px 30px 7px 36px;
+
+    width: 230px;
+
+    @include fontRalewayBold(25px, 50px, #ffffff);
+    letter-spacing: 1px;
+
+    background-color: #000000;
+
+    border: none;
+
+    &:hover {
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -60,6 +77,14 @@
       width: 290px;
 
       font-size: 16px;
+    }
+
+    &--form {
+      width: 165px;
+
+      font-size: 16px;
+      line-height: 35.6px;
+      letter-spacing: 0.9px;
     }
   }
 }

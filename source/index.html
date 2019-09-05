@@ -579,41 +579,6 @@
       </picture>
     </section>
 
-    <section class="contact-form">
-      <form class="contact-form form" action="#" method="post" name="contact-form">
-        <h2>Свяжитесь с нами</h2>
-        <fieldset class="form__fields-container">
-          <div class="form__fields-wrapper">
-            <ul class="form__list">
-              <li class="form__item">
-                <label for="form__name">Имя</label>
-                <input type="text" name="form__name" id="form__name" required>
-              </li>
-              <li class="form__item">
-                <label for="form__tel">Телефон</label>
-                <input type="tel" name="form__tel" id="form__tel" required>
-              </li>
-              <li class="form__item">
-                <label for="form__email">E-mail</label>
-                <input type="email" name="form__email" id="form__email" required>
-              </li>
-              <li class="form__item">
-                <label for="form__question">Сообщение</label>
-                <input type="text" name="form__question" id="form__question" required>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <p>
-          Заполняя форму на сайте, вы соглашаетесь с нашей
-          <a href="#">Политикой конфиденциальности</a>
-        </p>
-        <button class="form__submit-button button" type="submit" name="form__submit-button" aria-label="Отправить запрос">
-          <span>Отправить</span>
-        </button>
-      </form>
-    </section>
-
     <div class="page-footer footer">
       <div class="footer__wrapper">
         <div class="footer__inner-wrapper">
@@ -692,7 +657,43 @@
             </ul>
           </div>
         </div>
-        <div class="footer__contacts contacts" id="contacts">
+        <div class="footer__contact-form contact-form">
+          <form class="contact-form form" action="#" method="post" name="contact-form">
+            <h2>Свяжитесь с нами</h2>
+            <fieldset class="form__fields-container">
+              <div class="form__fields-wrapper">
+                <ul class="form__list">
+                  <li class="form__item form__item--name">
+                    <label for="form__name">Имя</label>
+                    <input type="text" name="form__name" id="form__name" required>
+                  </li>
+                  <li class="form__item form__item--tel">
+                    <label for="form__tel">Телефон</label>
+                    <input type="tel" name="form__tel" id="form__tel" required>
+                  </li>
+                  <li class="form__item form__item--email">
+                    <label for="form__email">E-mail</label>
+                    <input type="email" name="form__email" id="form__email" required>
+                  </li>
+                  <li class="form__item form__item--question">
+                    <label for="form__question">Сообщение</label>
+                    <input type="text" name="form__question" id="form__question" required>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <p>
+              Заполняя форму на сайте, вы соглашаетесь с нашей
+              <a href="#">Политикой конфиденциальности</a>
+            </p>
+            <div class="form__button-wrapper">
+              <button class="form__submit-button button button--form" type="submit" name="form__submit-button" aria-label="Отправить запрос">
+                <span>Отправить</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="footer__contacts footer__contacts--basic contacts" id="contacts">
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--address">
               <p>

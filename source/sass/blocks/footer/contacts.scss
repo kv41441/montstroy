@@ -177,6 +177,8 @@
 
           &::before {
             top: 6px;
+
+            background: url("../img/icon-geo-gray.svg") no-repeat 0 0;
           }
         }
 
@@ -189,6 +191,14 @@
 
           &::before {
             left: -2px;
+
+            background: url("../img/icon-envelope-gray.svg") no-repeat 0 0;
+          }
+        }
+
+        &--tel {
+          &::before {
+            background: url("../img/icon-phone-gray.svg") no-repeat 0 0;
           }
         }
       }
