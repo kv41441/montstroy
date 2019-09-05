@@ -88,3 +88,19 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .button {
+    &--services {
+      width: 280px;
+
+      font-size: 16px;
+    }
+
+    &--contacts {
+      width: 280px;
+
+      font-size: 16px;
+    }
+  }
+}

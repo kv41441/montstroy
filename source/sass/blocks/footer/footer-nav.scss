@@ -26,7 +26,7 @@
   padding: 0;
 
   a {
-    @include fontRobotoRegular(12px, auto, #d5d5d5);
+    @include fontRobotoRegular(12px, normal, #d5d5d5);
     text-decoration: none;
 
     opacity: 0.5;

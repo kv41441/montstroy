@@ -64,14 +64,13 @@
 
   width: 290px;
 
-  background-color: #5e5d60;
-
   &:not(:first-of-type),
   &:not(:nth-of-type(4)) {
     margin-left: 4px;
   }
 
   h3 {
+    display: block;
     margin: 0;
     padding: 0;
 
@@ -173,10 +172,10 @@
       width: 220px;
     }
 
-    background: url("../img/stadium-desktop@1x.jpg") no-repeat 0 0;
+    background: #5e5d60 url("../img/stadium-desktop@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/stadium-desktop@2x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/stadium-desktop@2x.jpg") no-repeat 0 0;
     }
   }
 
@@ -199,10 +198,10 @@
       letter-spacing: 0.1px;
     }
 
-    background: url("../img/business-center-desktop@1x.jpg") no-repeat 0 0;
+    background: #5e5d60 url("../img/business-center-desktop@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/business-center-desktop@2x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/business-center-desktop@2x.jpg") no-repeat 0 0;
     }
   }
 
@@ -225,10 +224,10 @@
       letter-spacing: 0.1px;
     }
 
-    background: url("../img/cinema-desktop@1x.jpg") no-repeat 0 0;
+    background: #5e5d60 url("../img/cinema-desktop@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/cinema-desktop@2x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/cinema-desktop@2x.jpg") no-repeat 0 0;
     }
   }
 
@@ -249,26 +248,26 @@
       width: 245px;
     }
 
-    background: url("../img/tk-medial-desktop@1x.jpg") no-repeat 0 0;
+    background: #5e5d60 url("../img/tk-medial-desktop@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/tk-medial-desktop@2x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/tk-medial-desktop@2x.jpg") no-repeat 0 0;
     }
   }
 
   &--energo {
-    background: url("../img/energocompany-desktop@1x.jpg") no-repeat 0 0;
+    background: #5e5d60 url("../img/energocompany-desktop@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/energocompany-desktop@2x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/energocompany-desktop@2x.jpg") no-repeat 0 0;
     }
   }
 
   &--theater {
-    background: url("../img/theater-desktop@1x.jpg") no-repeat 0 0;
+    background: #5e5d60 url("../img/theater-desktop@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/theater-desktop@2x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/theater-desktop@2x.jpg") no-repeat 0 0;
     }
 
     br {
@@ -365,11 +364,11 @@
         width: 550px;
       }
 
-      background: url("../img/stadium-tablet@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/stadium-tablet@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/stadium-tablet@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/stadium-tablet@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
@@ -389,12 +388,12 @@
         letter-spacing: 0;
       }
 
-      background: url("../img/business-center-tablet@1x.jpg") no-repeat 0 0;
-      background-size: contain;
+      background: #5e5d60 url("../img/business-center-tablet@1x.jpg") no-repeat 0 0;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/business-center-tablet@2x.jpg") no-repeat 0 0;
-        background-size: contain;
+        background: #5e5d60 url("../img/business-center-tablet@2x.jpg") no-repeat 0 0;
+        background-size: cover;
       }
     }
 
@@ -415,12 +414,12 @@
         letter-spacing: 0;
       }
 
-      background: url("../img/cinema-tablet@1x.jpg") no-repeat 0 0;
-      background-size: contain;
+      background: #5e5d60 url("../img/cinema-tablet@1x.jpg") no-repeat 0 0;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/cinema-tablet@2x.jpg") no-repeat 0 0;
-        background-size: contain;
+        background: #5e5d60 url("../img/cinema-tablet@2x.jpg") no-repeat 0 0;
+        background-size: cover;
       }
     }
 
@@ -437,12 +436,12 @@
         width: 480px;
       }
 
-      background: url("../img/tk-medial-tablet@1x.jpg") no-repeat 0 0;
-      background-size: contain;
+      background: #5e5d60 url("../img/tk-medial-tablet@1x.jpg") no-repeat 0 0;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/tk-medial-tablet@2x.jpg") no-repeat 0 0;
-        background-size: contain;
+        background: #5e5d60 url("../img/tk-medial-tablet@2x.jpg") no-repeat 0 0;
+        background-size: cover;
       }
     }
 
@@ -467,11 +466,11 @@
         display: none;
       }
 
-      background: url("../img/energocompany-tablet@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/energocompany-tablet@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/energocompany-tablet@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/energocompany-tablet@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
@@ -503,12 +502,12 @@
         }
       }
 
-      background: url("../img/theater-tablet@1x.jpg") no-repeat 0 0;
-      background-size: contain;
+      background: #5e5d60 url("../img/theater-tablet@1x.jpg") no-repeat 0 0;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/theater-tablet@2x.jpg") no-repeat 0 0;
-        background-size: contain;
+        background: #5e5d60 url("../img/theater-tablet@2x.jpg") no-repeat 0 0;
+        background-size: cover;
       }
     }
   }
@@ -555,11 +554,11 @@
     &--stadium {
       padding-bottom: 26px;
 
-      background: url("../img/stadium-mobile@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/stadium-mobile@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/stadium-mobile@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/stadium-mobile@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
@@ -571,11 +570,11 @@
         margin-top: 37px;
       }
 
-      background: url("../img/business-center-mobile@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/business-center-mobile@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/business-center-mobile@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/business-center-mobile@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
@@ -587,11 +586,11 @@
         margin-top: 37px;
       }
 
-      background: url("../img/cinema-mobile@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/cinema-mobile@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/cinema-mobile@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/cinema-mobile@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
@@ -603,11 +602,11 @@
         margin-top: 39px;
       }
 
-      background: url("../img/tk-medial-mobile@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/tk-medial-mobile@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/tk-medial-mobile@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/tk-medial-mobile@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
@@ -619,11 +618,11 @@
         margin-top: 28px;
       }
 
-      background: url("../img/energocompany-mobile@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/energocompany-mobile@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/energocompany-mobile@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/energocompany-mobile@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
@@ -635,11 +634,11 @@
         margin-top: 28px;
       }
 
-      background: url("../img/theater-mobile@1x.jpg") no-repeat 0 0;
+      background: #5e5d60 url("../img/theater-mobile@1x.jpg") no-repeat 0 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/theater-mobile@2x.jpg") no-repeat 0 0;
+        background: #5e5d60 url("../img/theater-mobile@2x.jpg") no-repeat 0 0;
         background-size: contain;
       }
     }
