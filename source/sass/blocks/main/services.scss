@@ -89,6 +89,16 @@
     &:active {
       opacity: 0.5;
     }
+
+    &::after {
+      content: ";";
+
+      position: absolute;
+      bottom: 0;
+      right: -3px;
+
+      font-size: 13px;
+    }
   }
 
   ul {
@@ -201,6 +211,14 @@
 
   li {
     padding: 0;
+
+    &:last-of-type {
+      a {
+        &::after {
+          content: ".";
+        }
+      }
+    }
   }
 }
 
@@ -276,6 +294,12 @@
         border-right: 4px solid transparent;
 
         border-top: 5px solid #000000;
+      }
+    }
+
+    a {
+      &::after {
+        display: none;
       }
     }
 
