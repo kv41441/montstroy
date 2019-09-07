@@ -1,31 +1,37 @@
-const servicesListItem = document.querySelector('.services__item ul');
+const headerMenu = document.querySelector('.hidden-nav');
+const headerMenuButton = document.querySelector("button[name=page-header__menu-button]");
 
 
-// Открытие/закрытие списков
+// Открытие/закрытие выпадающих списков
 
-/*$(footerNavHeader).click(() => {
-  if (footerNav.classList.contains('footer-nav--closed') && $(window).width() < 768) {
-    $('.footer-nav__list').slideDown(800);
-    $('.footer-nav').removeClass('footer-nav--closed');
-    $('.footer-nav').addClass('footer-nav--opened');
-  } else if (footerNav.classList.contains('footer-nav--opened') && $(window).width() < 768) {
-    $('.footer-nav__list').slideUp(800);
-    $('.footer-nav').removeClass('footer-nav--opened');
-    $('.footer-nav').addClass('footer-nav--closed');
+$(headerMenuButton).click(() => {
+  if (headerMenu.classList.contains('hidden-nav--closed') && $(window).width() < 1024) {
+    $('.hidden-nav').slideDown(800);
+    $('.hidden-nav').removeClass('hidden-nav--closed');
+    $('.hidden-nav').addClass('hidden-nav--opened');
+  } else if (headerMenu.classList.contains('hidden-nav--opened') && $(window).width() < 1024) {
+    $('.hidden-nav').slideUp(800);
+    $('.hidden-nav').removeClass('hidden-nav--opened');
+    $('.hidden-nav').addClass('hidden-nav--closed');
   }
 });
 
-$(contactsHeader).click(() => {
-  if (contacts.classList.contains('contacts--closed') && $(window).width() < 768) {
-    $('.contacts__list').slideDown(800);
-    $('.contacts').removeClass('contacts--closed');
-    $('.contacts').addClass('contacts--opened');
-  } else if (contacts.classList.contains('contacts--opened') && $(window).width() < 768) {
-    $('.contacts__list').slideUp(800);
-    $('.contacts').removeClass('contacts--opened');
-    $('.contacts').addClass('contacts--closed');
+
+$('.services__item h3').click((evt) => {
+  const currentServicesItem = evt.target.parentNode;
+  const currentServicesList = evt.target.parentNode.querySelector('ul');
+  console.log(evt.target.parentNode.querySelector('ul'))
+
+  if (currentServicesItem.classList.contains('services__item--closed') && $(window).width() < 1024) {
+    $(currentServicesList).slideDown(800);
+    $(currentServicesItem).removeClass('services__item--closed');
+    $(currentServicesItem).addClass('services__item--opened');
+  } else if (currentServicesItem.classList.contains('services__item--opened') && $(window).width() < 1024) {
+    $(currentServicesList).slideUp(800);
+    $(currentServicesItem).removeClass('services__item--opened');
+    $(currentServicesItem).addClass('services__item--closed');
   }
-});*/
+});
 
 // Маска ввода формы телефона
 
