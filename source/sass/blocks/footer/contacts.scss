@@ -215,6 +215,10 @@
 
     &--address {
       p {
+        @media (min-width: 400px) {
+          width: 100%;
+        }
+
         line-height: 21px;
       }
 

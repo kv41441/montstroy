@@ -34,6 +34,11 @@
 }
 
 @media (max-width: $mobile-width) {
+  .footer-nav {
+    min-width: 320px;
+    width: 100%;
+  }
+
   .footer-nav__list {
     flex-direction: column;
 
@@ -44,6 +49,7 @@
   }
 
   .footer-nav__item {
+    min-width: 320px;
     width: 100%;
 
     a {

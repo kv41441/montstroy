@@ -12,6 +12,8 @@
   <link rel="preload" href="fonts/roboto-black.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/jquery-3.4.1.min.js" defer></script>
+  <script src="js/jquery.mask.min.js" defer></script>
   <script src="js/script.min.js" defer></script>
 </head>
 <body>
@@ -19,7 +21,7 @@
   <header class="page-header">
     <div class="page-header__decor-wrapper">
       <div class="page-header__wrapper">
-        <button class="page-header__menu-button" type="button" aria-label="Навигационное меню">
+        <button class="page-header__menu-button" type="button" name="page-header__menu-button" aria-label="Навигационное меню">
           <span class="visually-hidden">Навигационное меню</span>
         </button>
         <div class="page-header__logo logo">
@@ -68,7 +70,7 @@
         </nav>
       </div>
     </div>
-    <ul class="page-header__hidden-nav hidden-nav">
+    <ul class="page-header__hidden-nav hidden-nav hidden-nav--closed">
       <li class="hidden-nav__item">
         <a href="#services">
           Услуги
@@ -204,7 +206,7 @@
               </li>
             </ul>
           </li>
-          <li class="services__item services__item--engineering">
+          <li class="services__item services__item--engineering services__item--closed">
             <h3>Инженерные изыскания</h3>
             <ul>
               <li>
@@ -251,7 +253,7 @@
               </li>
             </ul>
           </li>
-          <li class="services__item services__item--montage">
+          <li class="services__item services__item--montage services__item--closed">
             <h3>Строительно-монтажные работы</h3>
             <ul>
               <li>
@@ -288,7 +290,7 @@
               </li>
             </ul>
           </li>
-          <li class="services__item services__item--using">
+          <li class="services__item services__item--using services__item--closed">
             <h3>Эксплуатация и сервисное обслуживание</h3>
             <ul>
               <li>
@@ -328,7 +330,7 @@
               </li>
             </ul>
           </li>
-          <li class="services__item services__item--lab">
+          <li class="services__item services__item--lab services__item--closed">
             <h3>Электролаборатория</h3>
             <ul>
               <li>
@@ -360,7 +362,7 @@
               </li>
               <li>
                 <a href="#">
-                  Поиск кабельных трасс, мест повреждения и «прожиг кабеля»>
+                  Поиск кабельных трасс, мест повреждения и «прожиг кабеля»
                 </a>
               </li>
               <li>
@@ -371,7 +373,7 @@
               </li>
             </ul>
           </li>
-          <li class="services__item services__item--connecting">
+          <li class="services__item services__item--connecting services__item--closed">
             <h3>Услуги по технологическому присоединению</h3>
             <ul>
               <li>
@@ -420,11 +422,6 @@
                 В целях обеспечения электроэнергией стадиона специалистами было
                 осуществлено строительство распределительной сети мощностью 20кВ
               </p>
-              <a class="projects__item-button" href="#">
-                <span class="visually-hidden">
-                  Подробнее о проекте
-                </span>
-              </a>
             </a>
           </li>
           <li class="projects__item projects__item--business">
@@ -434,11 +431,6 @@
                 Специалисты провели масштабную работу по организации АСКУЭ на
                 694 точки учета комплекса с апартаментами
               </p>
-              <a class="projects__item-button" href="#">
-                <span class="visually-hidden">
-                  Подробнее о проекте
-                </span>
-              </a>
             </a>
           </li>
           <li class="projects__item projects__item--cinema">
@@ -447,11 +439,6 @@
               <p>
                 Специалисты выполнили комплекс работ по системам учета электроэнергии
               </p>
-              <a class="projects__item-button" href="#">
-                <span class="visually-hidden">
-                  Подробнее о проекте
-                </span>
-              </a>
             </a>
           </li>
           <li class="projects__item projects__item--medial">
@@ -461,11 +448,6 @@
                 В целях обеспечения электроэнергией телевизионного комплекса было
                 осуществлено строительство распределительной сети мощностью 20кВ
               </p>
-              <a class="projects__item-button" href="#">
-                <span class="visually-hidden">
-                  Подробнее о проекте
-                </span>
-              </a>
             </a>
           </li>
           <li class="projects__item projects__item--energo projects__item--big">
@@ -476,11 +458,6 @@
                 а также поставлены материалы <br> и оборудование при осуществлении ремонта
                 электросетевого имущества кабельных линий 220 кВ </span> для ОАО «ЭнергоНацКомпани»
               </p>
-              <a class="projects__item-button" href="#">
-                <span class="visually-hidden">
-                  Подробнее о проекте
-                </span>
-              </a>
             </a>
           </li>
           <li class="projects__item projects__item--theater projects__item--big">
@@ -491,11 +468,6 @@
                 пуско-наладочные работы по механизации сценических подъемников в здании
                 театра
               </p>
-              <a class="projects__item-button" href="#">
-                <span class="visually-hidden">
-                  Подробнее о проекте
-                </span>
-              </a>
             </a>
           </li>
         </ul>
@@ -587,7 +559,7 @@
     <section class="map">
       <h2>Контакты</h2>
       <h3 class="visually-hidden">Наше месторасположение на карте</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.3088802232683!2d37.6162456437383!3d55.631440486226325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1567755951530!5m2!1sru!2sru" frameborder="0" style="border: 0;" allowfullscreen="" title="Как нас найти"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.3088802232683!2d37.6162456437383!3d55.631440486226325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1567755951530!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" title="Как нас найти"></iframe>
     </section>
 
     <div class="page-footer footer" id="footer">

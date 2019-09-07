@@ -27,10 +27,6 @@
   margin: 5px 0 0 17px;
 }
 
-.page-header__hidden-nav {
-  display: none;
-}
-
 @media (max-width: $tablet-width) {
   .page-header {
     position: relative;
@@ -98,8 +94,6 @@
     top: 52px;
     left: 0;
 
-    display: none;
-
     margin: 0;
   }
 }
@@ -130,7 +124,5 @@
 
   .page-header__hidden-nav {
     top: 50px;
-
-    display: none;
   }
 }

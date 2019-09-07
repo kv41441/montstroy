@@ -8,6 +8,16 @@
   list-style: none;
 
   background-color: #e7e7e7;
+
+  z-index: 10;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .hidden-nav__item {

@@ -273,8 +273,6 @@
       margin-right: 0;
     }
 
-    background-color: #ffffff;
-
     box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.1);
 
     border: none;
@@ -293,6 +291,8 @@
     }
 
     &--active {
+      z-index: 5;
+
       width: 280px;
       height: 207px;
 
@@ -303,6 +303,8 @@
         width: 184px;
         height: 152px;
       }
+
+      background-color: #ffffff;
     }
 
     &--shield {
