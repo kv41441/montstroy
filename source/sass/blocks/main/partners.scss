@@ -170,17 +170,13 @@
 .partners__item {
   box-sizing: border-box;
 
-  margin: 0;
+  margin: 0 25px 0 0;
   padding: 0;
 
   width: 270px;
   height: 137px;
 
   border: 1px solid #d6d6d6;
-
-  &:not(:nth-of-type(4)) {
-    margin-right: 30px;
-  }
 
   opacity: 0.5;
 
@@ -191,7 +187,8 @@
   &--ava {
     img {
       margin-top: 2px;
-      margin-left: 31px;
+      margin-left: auto;
+      margin-right: auto;
 
       width: 175px;
       height: 127px;
@@ -200,7 +197,8 @@
 
   &--mirror {
     img {
-      margin-left: 51px;
+      margin-left: auto;
+      margin-right: auto;
 
       width: 167px;
       height: 121px;
@@ -209,7 +207,8 @@
 
   &--shield {
     img {
-      margin-left: 31px;
+      margin-left: auto;
+      margin-right: auto;
 
       width: 211px;
       height: 135px;
@@ -218,7 +217,8 @@
 
   &--teplo {
     img {
-      margin-left: 50px;
+      margin-left: auto;
+      margin-right: auto;
 
       width: 173px;
       height: 135px;
@@ -269,13 +269,15 @@
   }
 
   .partners__item {
-    &:not(:nth-of-type(4)) {
-      margin-right: 0;
-    }
+    margin-right: 0;
 
     box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.05);
 
     border: none;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
 
     &--ava {
       width: 230px;
@@ -283,25 +285,19 @@
 
       img {
         margin-top: 55px;
-        margin-left: 40px;
+        margin-left: auto;
+        margin-right: auto;
 
         width: 149px;
         height: 81px;
       }
     }
 
-    &--active {
-      z-index: 5;
-
-      width: 280px;
-      height: 207px;
-
+    &--mirror {
       img {
-        margin-top: 33px;
-        margin-left: 40px;
-
-        width: 184px;
-        height: 152px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       background-color: #ffffff;
@@ -312,8 +308,8 @@
       height: 190px;
 
       img {
-        margin-top: 16px;
-        margin-left: -5px;
+        margin-left: auto;
+        margin-right: auto;
 
         width: 211px;
         height: 169px;
@@ -321,12 +317,16 @@
     }
 
     &--teplo {
-      display: none;
+      img {
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 
   .partners__slider-buttons-container {
-    display: block;
+    display: none;
 
     margin: 2px auto 0 auto;
     padding: 0 0 0 18px;
@@ -368,7 +368,7 @@
 @media (max-width: $mobile-width) {
   .partners {
     margin-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 
 
     h2 {
@@ -382,7 +382,8 @@
   }
 
   .partners__wrapper {
-    width: 280px;
+    min-width: 280px;
+    max-width: 80%;
   }
 
   .partners__list {
@@ -400,18 +401,6 @@
         margin-top: 26px;
         margin-left: 68px;
       }
-    }
-
-    &--mirror {
-      display: none;
-    }
-
-    &--shield {
-      display: none;
-    }
-
-    &--teplo {
-      display: none;
     }
   }
 

@@ -33,8 +33,37 @@ $('.services__item h3').click((evt) => {
   }
 });
 
-// Маска ввода формы телефона
+// Маска ввода формы телефона и слайдер
 
 $(document).ready(function(){
   $('input[type = tel]').mask('+7 (000) 000 00 00');
+  $('.partners__list').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $('button[name=partners__scroll-to-left-button]'),
+    nextArrow: $('button[name=partners__scroll-to-right-button]'),
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1190,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: 0,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true
+        }
+      },
+    ]
+  });
 });

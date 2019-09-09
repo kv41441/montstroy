@@ -29,6 +29,7 @@
 @media (max-width: $tablet-width) {
   .map {
     margin-top: 14px;
+    height: auto;
 
     iframe {
       height: 348px;
