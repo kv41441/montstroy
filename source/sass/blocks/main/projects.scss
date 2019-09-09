@@ -176,11 +176,11 @@
     }
 
     background: #5e5d60 url("../img/stadium-desktop@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: #5e5d60 url("../img/stadium-desktop@2x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
     }
   }
 
@@ -204,11 +204,11 @@
     }
 
     background: #5e5d60 url("../img/business-center-desktop@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: #5e5d60 url("../img/business-center-desktop@2x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
     }
   }
 
@@ -232,11 +232,11 @@
     }
 
     background: #5e5d60 url("../img/cinema-desktop@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: #5e5d60 url("../img/cinema-desktop@2x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
     }
   }
 
@@ -258,31 +258,31 @@
     }
 
     background: #5e5d60 url("../img/tk-medial-desktop@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: #5e5d60 url("../img/tk-medial-desktop@2x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
     }
   }
 
   &--energo {
     background: #5e5d60 url("../img/energocompany-desktop@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: #5e5d60 url("../img/energocompany-desktop@2x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
     }
   }
 
   &--theater {
     background: #5e5d60 url("../img/theater-desktop@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: #5e5d60 url("../img/theater-desktop@2x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
     }
 
     br {
@@ -382,11 +382,11 @@
       }
 
       background: #5e5d60 url("../img/stadium-tablet@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/stadium-tablet@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -406,11 +406,11 @@
       }
 
       background: #5e5d60 url("../img/business-center-tablet@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/business-center-tablet@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -432,11 +432,11 @@
       }
 
       background: #5e5d60 url("../img/cinema-tablet@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/cinema-tablet@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -454,11 +454,11 @@
       }
 
       background: #5e5d60 url("../img/tk-medial-tablet@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/tk-medial-tablet@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -520,11 +520,11 @@
       }
 
       background: #5e5d60 url("../img/theater-tablet@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/theater-tablet@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
   }
@@ -543,7 +543,12 @@
   }
 
   .projects__wrapper {
-    width: 280px;
+    min-width: 280px;
+    width: 90%;
+
+    @media (max-width: 330px) {
+      width: 280px;
+    }
   }
 
   .projects__list {
@@ -572,11 +577,11 @@
       padding-bottom: 26px;
 
       background: #5e5d60 url("../img/stadium-mobile@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/stadium-mobile@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -588,11 +593,11 @@
       }
 
       background: #5e5d60 url("../img/business-center-mobile@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/business-center-mobile@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -604,11 +609,11 @@
       }
 
       background: #5e5d60 url("../img/cinema-mobile@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/cinema-mobile@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -620,11 +625,11 @@
       }
 
       background: #5e5d60 url("../img/tk-medial-mobile@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/tk-medial-mobile@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -636,11 +641,11 @@
       }
 
       background: #5e5d60 url("../img/energocompany-mobile@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/energocompany-mobile@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
 
@@ -652,11 +657,11 @@
       }
 
       background: #5e5d60 url("../img/theater-mobile@1x.jpg") no-repeat 0 0;
-      background-size: 100% 100%;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: #5e5d60 url("../img/theater-mobile@2x.jpg") no-repeat 0 0;
-        background-size: 100% 100%;
+        background-size: cover;
       }
     }
   }

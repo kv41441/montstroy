@@ -17,6 +17,10 @@
   list-style: none;
 }
 
+.advantages__slider-wrapper {
+  display: none;
+}
+
 .advantages__item {
   position: relative;
 
@@ -95,6 +99,14 @@
     margin-right: auto;
 
     width: 720px;
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  .advantages__slider-wrapper {
+    display: block;
   }
 
   .advantages__item {
@@ -191,7 +203,7 @@
   }
 
   .advantages__buttons-container {
-    display: block;
+    display: none;
 
     margin: 20px auto 0 auto;
     padding: 0 0 0 9px;

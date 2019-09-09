@@ -66,4 +66,24 @@ $(document).ready(function(){
       },
     ]
   });
+  $('.advantages__list--slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    centerPadding: 0,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true
+        }
+      },
+    ]
+  });
 });
