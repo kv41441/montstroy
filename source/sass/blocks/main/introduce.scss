@@ -2,7 +2,7 @@
   box-sizing: border-box;
 
   margin: 15px 0 0 0;
-  padding: 0;
+  padding: 0 0 15px 0;
 
   background: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%) no-repeat 0 500px,
     #040404 url("../img/bg-image-desktop@1x.jpg") no-repeat 0 -100px;
@@ -83,8 +83,8 @@
   }
 }
 
-.introduce__advantages {
-  margin: 0;
+.introduce__features {
+  margin: 108px 0 0 0;
 }
 
 @media (max-width: $tablet-width) {
@@ -92,6 +92,7 @@
     position: relative;
 
     margin-top: 3px;
+    padding-bottom: 0;
 
     background: linear-gradient(to bottom, transparent 34.6%, #ffffff 34.6%, #ffffff 100%) no-repeat 0 300px,
       linear-gradient(to top, #050505 0%, rgba(5, 5, 5, 0) 100%) no-repeat 0 0,
@@ -151,8 +152,8 @@
     margin-left: 20px;
   }
 
-  .introduce__advantages {
-    margin-top: 170px;
+  .introduce__features {
+    margin-top: 128px;
   }
 }
 
@@ -236,7 +237,7 @@
     }
   }
 
-  .introduce__advantages {
-    margin-top: 40px;
+  .introduce__features {
+    margin-top: 0;
   }
 }
