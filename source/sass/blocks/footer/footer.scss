@@ -147,6 +147,10 @@
 
 @media (max-width: $mobile-width) {
   .footer {
+    box-sizing: border-box;
+
+    position: relative;
+
     padding-top: 14px;
     padding-bottom: 14px;
 
@@ -154,6 +158,8 @@
     width: 100%;
 
     border-top: 2px solid #00ffd7;
+
+    background-color: #000000;
   }
 
   .footer__inner-wrapper {

@@ -98,6 +98,9 @@
   }
 
   a {
+    display: block;
+    height: 100%;
+
     text-decoration: none;
   }
 
@@ -161,16 +164,15 @@
   }
 
   &--stadium {
-    padding-bottom: 34px;
-
     h3 {
-      margin-top: 40px;
+      padding-top: 40px;
       margin-left: 30px;
     }
 
     p {
       margin-top: 34px;
       margin-left: 30px;
+      padding-bottom: 34px;
 
       width: 220px;
     }
@@ -186,7 +188,7 @@
 
   &--business {
     h3 {
-      margin-top: 52px;
+      padding-top: 52px;
       margin-left: 28px;
 
       width: 170px;
@@ -214,7 +216,7 @@
 
   &--cinema {
     h3 {
-      margin-top: 53px;
+      padding-top: 53px;
       margin-left: 28px;
 
       width: 170px;
@@ -242,7 +244,7 @@
 
   &--medial {
     h3 {
-      margin-top: 53px;
+      padding-top: 53px;
       margin-left: 28px;
 
       width: 170px;
@@ -296,7 +298,7 @@
     width: 584px;
 
     h3 {
-      margin-top: 40px;
+      padding-top: 40px;
       margin-left: 30px;
 
       @include fontRobotoBold(32px, 42px, #ffffff);
@@ -356,7 +358,7 @@
     width: 100%;
 
     h3 {
-      margin: 33px 0 0 42px;
+      margin: 0 0 0 42px;
       padding: 0;
 
       font-size: 24px;
@@ -375,8 +377,13 @@
     }
 
     &--stadium {
+      h3 {
+        padding-top: 33px;
+      }
+
       p {
         margin-top: 0;
+        padding-bottom: 34px;
 
         width: 550px;
       }
@@ -391,15 +398,15 @@
     }
 
     &--business {
-      padding-bottom: 52px;
-
       h3 {
-        margin-top: 40px;
+        padding-top: 40px;
 
         width: 270px;
       }
 
       p {
+        padding-bottom: 52px;
+
         width: 580px;
 
         letter-spacing: 0;
@@ -415,10 +422,8 @@
     }
 
     &--cinema {
-      padding-bottom: 56px;
-
       h3 {
-        margin-top: 36px;
+        padding-top: 36px;
 
         width: 300px;
 
@@ -426,6 +431,8 @@
       }
 
       p {
+        padding-bottom: 56px;
+
         width: 500px;
 
         letter-spacing: 0;
@@ -441,15 +448,15 @@
     }
 
     &--medial {
-      padding-bottom: 38px;
-
       h3 {
-        margin-top: 34px;
+        padding-top: 34px;
 
         letter-spacing: 0;
       }
 
       p {
+        padding-bottom: 38px;
+
         width: 480px;
       }
 
@@ -463,16 +470,15 @@
     }
 
     &--energo {
-      padding-bottom: 53px;
-
       h3 {
-        margin-top: 36px;
+        padding-top: 36px;
 
         letter-spacing: 0.4px;
       }
 
       p {
         margin-top: 5px;
+        padding-bottom: 53px;
 
         width: 500px;
 
@@ -493,16 +499,15 @@
     }
 
     &--theater {
-      padding-bottom: 32px;
-
       h3 {
-        margin-top: 34px;
+        padding-top: 34px;
 
         letter-spacing: 0.2px;
       }
 
       p {
         margin-top: 5px;
+        padding-bottom: 32px;
 
         width: 620px;
 
@@ -557,7 +562,7 @@
 
   .projects__item {
     h3 {
-      margin-top: 24px;
+      padding-top: 24px;
       margin-left: 3px;
 
       width: 100%;
@@ -574,7 +579,9 @@
     }
 
     &--stadium {
-      padding-bottom: 26px;
+      h3 {
+        padding-bottom: 26px;
+      }
 
       background: #5e5d60 url("../img/stadium-mobile@1x.jpg") no-repeat 0 0;
       background-size: cover;
@@ -586,10 +593,9 @@
     }
 
     &--business {
-      padding-bottom: 39px;
-
       h3 {
-        margin-top: 37px;
+        padding-top: 37px;
+        padding-bottom: 39px;
       }
 
       background: #5e5d60 url("../img/business-center-mobile@1x.jpg") no-repeat 0 0;
@@ -602,10 +608,9 @@
     }
 
     &--cinema {
-      padding-bottom: 39px;
-
       h3 {
-        margin-top: 37px;
+        padding-top: 37px;
+        padding-bottom: 39px;
       }
 
       background: #5e5d60 url("../img/cinema-mobile@1x.jpg") no-repeat 0 0;
@@ -618,10 +623,9 @@
     }
 
     &--medial {
-      padding-bottom: 37px;
-
       h3 {
-        margin-top: 39px;
+        padding-top: 39px;
+        padding-bottom: 37px;
       }
 
       background: #5e5d60 url("../img/tk-medial-mobile@1x.jpg") no-repeat 0 0;
@@ -634,10 +638,9 @@
     }
 
     &--energo {
-      padding-bottom: 30px;
-
       h3 {
-        margin-top: 28px;
+        padding-top: 28px;
+        padding-bottom: 30px;
       }
 
       background: #5e5d60 url("../img/energocompany-mobile@1x.jpg") no-repeat 0 0;
@@ -650,10 +653,9 @@
     }
 
     &--theater {
-      padding-bottom: 30px;
-
       h3 {
-        margin-top: 28px;
+        padding-top: 28px;
+        padding-bottom: 30px;
       }
 
       background: #5e5d60 url("../img/theater-mobile@1x.jpg") no-repeat 0 0;
