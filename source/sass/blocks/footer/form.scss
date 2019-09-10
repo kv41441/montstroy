@@ -73,6 +73,8 @@
   input {
     @include fontRobotoRegular(20px, 50px);
     letter-spacing: 0.8px;
+
+    outline: 0;
   }
 
   label {
@@ -119,6 +121,8 @@
 
 .form__submit-button {
   margin: 0 auto;
+
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width) {

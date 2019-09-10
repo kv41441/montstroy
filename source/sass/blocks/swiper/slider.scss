@@ -491,6 +491,10 @@
 
     background-color: transparent;
 
+    outline: 0;
+
+    cursor: pointer;
+
     &::before {
       content: "";
 
@@ -669,6 +673,8 @@
 
   border: 1px solid #ededed;
   background-color: #ffffff;
+
+  outline: 0;
 }
 
 .partners__link img {
