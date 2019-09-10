@@ -69,9 +69,10 @@
   box-sizing: border-box;
 
   margin: 0 0 44px 0;
-  padding: 0 0 100px 0;
+  padding: 0 0 20px 0;
 
   width: 360px;
+  min-height: 497px;
 
   box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
 
@@ -288,6 +289,7 @@
     box-shadow: none;
 
     width: 352px;
+    min-height: auto;
 
     h3 {
       position: relative;
