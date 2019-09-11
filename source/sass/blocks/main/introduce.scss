@@ -5,7 +5,8 @@
   padding: 0 0 15px 0;
 
   background: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%) no-repeat 0 500px,
-    #040404 url("../img/bg-image-desktop@1x.jpg") no-repeat 0 -100px;
+    #040404 url("../img/bg-image-desktop@1x.jpg") no-repeat 10px -90px;
+  background-size: cover;
 }
 
 .introduce__wrapper {
