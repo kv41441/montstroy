@@ -617,6 +617,8 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px;
 }
 
-.partners__container {
-  padding-left: 10px;
+@media (max-width: 1199px) {
+  .partners__container {
+    padding-left: 10px;
+  }
 }
