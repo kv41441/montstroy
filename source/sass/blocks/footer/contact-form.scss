@@ -4,12 +4,16 @@
   position: absolute;
   z-index: 5;
   top: -119px;
-  right: 149px;
+  right: 25%;
 
   display: block;
 
   margin: 0 auto;
   padding: 0;
+
+  @media (max-width: 1060px) {
+    right: 23%;
+  }
 }
 
 @media (max-width: $tablet-width) {
