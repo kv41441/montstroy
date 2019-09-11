@@ -295,12 +295,6 @@
       background: #5e5d60 url("../img/theater-desktop@2x.jpg") no-repeat 0 0;
       background-size: cover;
     }
-
-    br {
-      &:last-of-type {
-        display: none;
-      }
-    }
   }
 
   &--big {
@@ -523,16 +517,6 @@
         width: 620px;
 
         letter-spacing: 0;
-      }
-
-      br {
-        &:first-of-type {
-          display: none;
-        }
-
-        &:last-of-type {
-          display: block;
-        }
       }
 
       background: #5e5d60 url("../img/theater-tablet@1x.jpg") no-repeat 0 0;
